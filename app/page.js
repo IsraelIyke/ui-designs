@@ -1,3 +1,4 @@
+import { BsSearch } from "react-icons/bs";
 const tags = [
   "Blender",
   "Browser",
@@ -35,7 +36,8 @@ export default function Home() {
         </div>
       </div>
       <div className="blog-search">
-        <input placeholder="Search articles, topics, etc" />
+        {/* <BsSearch /> */}
+        <input placeholder="🔎 Search articles, topics, etc" />
         <button>Search</button>
       </div>
       <div className="blog-recent">
