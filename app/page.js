@@ -1,4 +1,7 @@
-import { BsSearch } from "react-icons/bs";
+"use client";
+import NavBar from "@/app/components/nav";
+import { motion } from "framer-motion";
+
 const tags = [
   "Blender",
   "Browser",
@@ -24,9 +27,28 @@ const recent = [
   "HoloLens 2 Unreal Project Template",
   "Azure Speech Studio for Mixed Reality",
 ];
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+    },
+  },
+};
+
 export default function Home() {
   return (
-    <div className="blog-container">
+    <motion.div
+      className="blog-container"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <NavBar />
       <div className="blog-tags">
         <p>Tags</p>
         <div className="blog-tags-card">
@@ -36,18 +58,22 @@ export default function Home() {
         </div>
       </div>
       <div className="blog-search">
-        {/* <BsSearch /> */}
         <input placeholder="🔎 Search articles, topics, etc" />
         <button>Search</button>
       </div>
-      <div className="blog-recent">
+      <motion.div
+        className="blog-recent"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
         <p>Recent posts</p>
         <div className="blog-recent-card">
           {recent.map((items) => {
             return <div key={items}>{items}</div>;
           })}
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

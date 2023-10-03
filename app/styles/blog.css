@@ -61,7 +61,7 @@
   width: 80vw;
   overflow-wrap: normal;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 6rem;
 }
 .blog-tags-card {
   display: flex;
