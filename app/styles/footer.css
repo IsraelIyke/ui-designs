@@ -16,10 +16,6 @@
   background-color: rgb(241, 226, 245);
   margin-top: 6rem;
 }
-
-/* components/Footer.module.css */
-
-/* Footer Container */
 footer {
   background-color: #333;
   color: #fff;
@@ -39,6 +35,8 @@ footer {
 .footer-logo {
   font-family: Pacifico;
   color: #1a2653;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 /* Navigation Links */
@@ -50,6 +48,7 @@ footer {
 
 .footer-links ul li {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .footer-links a {
@@ -84,4 +83,30 @@ footer {
 
 .footer-bottom p {
   margin: 0;
+}
+
+@media screen and (width < 768px) {
+  .footer-content {
+    height: 40vh;
+    background-color: rgb(241, 226, 245);
+    margin-top: 4rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-links ul {
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    height: 50vh;
+    background-color: rgb(241, 226, 245);
+  }
+  .footerBar {
+    margin-top: 2rem;
+  }
 }
