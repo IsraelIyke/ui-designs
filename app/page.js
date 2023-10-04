@@ -2,6 +2,7 @@
 import NavBar from "@/app/components/nav";
 import { motion } from "framer-motion";
 import FooterBar from "./components/footer";
+import ScrollButton from "./components/ScrollButton";
 
 const tags = [
   "Blender",
@@ -75,6 +76,7 @@ export default function Home() {
           })}
         </div>
       </motion.div>
+      <ScrollButton />
       <FooterBar />
     </motion.div>
   );
