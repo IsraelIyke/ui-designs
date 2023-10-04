@@ -1,6 +1,7 @@
 import "./globals.css";
 import "././styles/blog.css";
 import "././styles/nav.css";
+import "././styles/footer.css";
 
 import { Inter } from "next/font/google";
 

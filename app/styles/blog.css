@@ -1,6 +1,6 @@
 .blog-container {
   background: linear-gradient(119deg, #f3f7ff 0%, #fee2f6 100%);
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 100vh;
   max-height: fit-content;
   display: flex;
@@ -13,6 +13,7 @@
   padding: 12px;
   align-items: center;
   margin: 0.4rem;
+  margin-top: 6rem;
   border-radius: 12px;
   border: 12px solid #fff;
   background: #f1e2f5;
@@ -61,7 +62,7 @@
   width: 80vw;
   overflow-wrap: normal;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 .blog-tags-card {
   display: flex;

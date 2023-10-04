@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Pacifico&display=swap");
+.footerBar {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 5rem;
+}
+.footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20vh;
+}
+.footer-content {
+  height: 40vh;
+  background-color: rgb(241, 226, 245);
+  margin-top: 6rem;
+}
+
+/* components/Footer.module.css */
+
+/* Footer Container */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.footer-logo {
+  font-family: Pacifico;
+  color: #1a2653;
+}
+
+/* Navigation Links */
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #1a2653;
+  font-weight: bold;
+}
+
+/* Social Media Icons */
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 15px;
+  color: #1a2653;
+}
+
+.footer-social i {
+  font-size: 24px;
+}
+
+/* Copyright Notice */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

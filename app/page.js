@@ -1,6 +1,7 @@
 "use client";
 import NavBar from "@/app/components/nav";
 import { motion } from "framer-motion";
+import FooterBar from "./components/footer";
 
 const tags = [
   "Blender",
@@ -48,7 +49,11 @@ export default function Home() {
       animate="visible"
       variants={containerVariants}
     >
-      <NavBar />
+      <NavBar />{" "}
+      <div className="blog-search">
+        <input placeholder="🔎 Search articles, topics, etc" />
+        <button>Search</button>
+      </div>
       <div className="blog-tags">
         <p>Tags</p>
         <div className="blog-tags-card">
@@ -56,10 +61,6 @@ export default function Home() {
             return <div key={items}>{items}</div>;
           })}
         </div>
-      </div>
-      <div className="blog-search">
-        <input placeholder="🔎 Search articles, topics, etc" />
-        <button>Search</button>
       </div>
       <motion.div
         className="blog-recent"
@@ -74,6 +75,7 @@ export default function Home() {
           })}
         </div>
       </motion.div>
+      <FooterBar />
     </motion.div>
   );
 }
